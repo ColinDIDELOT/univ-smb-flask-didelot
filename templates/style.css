@@ -1,0 +1,36 @@
+/* Styles for the navigation bar */
+.navbar {
+    background-color: #343a40; /* Dark background color */
+    color: #ffffff; /* Text color */
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+    color: #ffffff; /* Text color for links */
+}
+
+.navbar-toggler {
+    border-color: #ffffff; /* Border color for toggler */
+}
+
+/* Styles for the search bar */
+.navbar-form {
+    margin-right: 20px; /* Add some space between the search bar and the rest of the content */
+}
+
+.form-control {
+    width: 300px; /* Set the width of the search input */
+}
+
+/* Custom styles for the main content */
+.container {
+    margin-top: 20px; /* Add some space between the navigation bar and the content */
+}
+
+/* Style for the footer */
+footer {
+    background-color: #343a40; /* Dark background color */
+    color: #ffffff; /* Text color */
+    text-align: center; /* Center-align the text */
+    padding: 20px 0; /* Add padding top and bottom */
+}

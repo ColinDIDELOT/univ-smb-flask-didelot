@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alias Page</title>
+</head>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/">Home</a></li>
+              <li><a class="dropdown-item" href="rules_nat">NAT rules</a></li>
+              <li><a class="dropdown-item" href="rules_filter">Filter Rules</a></li>
+              <li><a class="dropdown-item" href="rules_nat_add">Add NAT rules</a></li>
+              <li><a class="dropdown-item" href="/alias">Alias</a></li>
+
+            </ul>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <nav class="navbar bg-body-tertiary">
+    <div class="container-fluid">
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+   <style>
+   /* Styles for the navigation bar */
+.navbar {
+    background-color: #007bff; /* Couleur de fond du navbar */
+    color: #ffffff; /* Couleur du texte */
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+    color: #ffffff; /* Couleur du texte des liens */
+}
+
+.navbar-toggler {
+    border-color: #ffffff; /* Couleur de la bordure du bouton de basculement */
+}
+
+/* Styles for the search bar */
+.navbar-form {
+    margin-right: 20px; /* Ajout d'un espace entre la barre de recherche et le reste du contenu */
+}
+
+.form-control {
+    width: 300px; /* Définir la largeur de la zone de recherche */
+}
+
+/* Custom styles for the main content */
+.container {
+    margin-top: 20px; /* Ajouter de l'espace entre la barre de navigation et le contenu */
+    padding: 20px; /* Ajouter un remplissage autour du contenu */
+    background-color: #f8f9fa; /* Couleur de fond du contenu */
+    border-radius: 5px; /* Ajouter une bordure arrondie */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ajouter une ombre douce */
+}
+
+/* Style for the footer */
+footer {
+    background-color: #007bff; /* Couleur de fond du footer */
+    color: #ffffff; /* Couleur du texte */
+    text-align: center; /* Centrer le texte */
+    padding: 20px 0; /* Ajouter du padding en haut et en bas */
+}
+
+   </style>
+  {% block content %}{% endblock %}

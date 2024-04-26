@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            {% block head %}
+            <link rel="stylesheet" hred="styles.css" />
+            <title>Iptables - {% block title %} {% endblock  %} </title>
+            {% endblock %}
+            <body>
+                <div id="content">{% block content %} {% endblock%} </div>
+            </body>
+        </head>
+    </html>

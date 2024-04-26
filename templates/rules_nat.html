@@ -1,0 +1,73 @@
+{% extends 'layout.html' %}
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAT Rules Page</title>
+</head>
+<body>
+    <h1>NAT Rules</h1>
+    <p>View and edit your Network Address Translation rules here.</p>
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">SOURCE</th>
+            <th scope="col">DESTINATION</th>
+            <th scope="col">PORT</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>192.168.0.1</td>
+            <td>192.168.0.1</td>
+            <td>80</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>192.168.0.1</td>
+            <td>192.168.0.1</td>
+            <td>80</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td colspan="2">192.168.0.1 192.168.0.1</td>
+            <td>80</td>
+          </tr>
+        </tbody>
+      </table><table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Source</th>
+            <th scope="col">Destination</th>
+            <th scope="col">port</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>192.168.0.1</td>
+            <td>192.168.0.1</td>
+            <td>80</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>192.168.0.1</td>
+            <td>192.168.0.1</td>
+            <td>80</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td colspan="2">192.168.0.1 192.168.0.1</td>
+            <td>80</td>
+          </tr>
+        </tbody>
+      </table>
+</body>
+</html>
+{% endblock %}
